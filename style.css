@@ -1,0 +1,66 @@
+body {
+  background-image: url("https://fotoma.net/wp-content/uploads/2020/04/zoom_wall02.jpg");
+  background-size: cover;
+}
+
+.container {
+  height: 800px;
+  width: 500px;
+  margin: 0 auto;
+  position: relative;
+}
+
+h1 {
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 30px;
+}
+
+.accordion {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.menu {
+  background-color: rgba(50, 50, 200, 0.7);
+  color: white;
+  font-size: 18px;
+  padding: 10px;
+
+  text-align: center;
+  cursor: pointer;
+  border: 1px solid black;
+}
+.menu:hover,
+.menu:active,
+.is-active {
+  background-color: rgba(50, 50, 200, 1);
+}
+.contents {
+  text-align: center;
+  height: 0; /*　行をなくす　*/
+  overflow: hidden; /* 隠す */
+  transition-duration: 0.5s;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.is-open {
+  border: 1px solid black;
+  padding: 10px;
+  height: 100px;
+  width: 320px;
+  line-height: 70px;
+}
+
+.b {
+  color: white;
+}
+
+a {
+  color: black;
+}
